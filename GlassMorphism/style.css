@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffa6b7 10%, #1e2ad2 100%) fixed;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: red;
+}
+
+.container .thumb {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.container .thumb li {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  margin: 10px;
+  list-style: none;
+}
+
+.container .imgBox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100%;
+  background: yellow;
+}
