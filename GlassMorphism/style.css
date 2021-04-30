@@ -60,7 +60,6 @@ body {
   right: 0;
   width: 350px;
   height: 100%;
-  background: yellow;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -108,7 +107,7 @@ body {
   width: 30px;
   height: 30px;
   background: white;
-  color: blue;
+  color: rgb(0, 28, 184);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,10 +126,23 @@ body {
 .container .imgBox .btn {
   position: absolute;
   bottom: -30px;
-  background: white;
   display: inline-block;
   text-decoration: none;
   padding: 15px 30px;
   border-radius: 30px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: 200ms ease-in-out;
+  background: rgba(255, 255, 255, 0.2);
+  /* box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05); */
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  color: white;
+}
+
+.container .imgBox .btn:hover {
+  color: rgb(0, 28, 184);
+  background: white;
+  border: 1px solid white;
 }
